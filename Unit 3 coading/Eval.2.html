@@ -1,0 +1,52 @@
+<script>
+
+// CONSTRCYOR FUNCTION
+
+// 1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1- 
+
+// let obj = {
+//     name: "Shagun",
+//     hello : function(){
+//         console.log(obj.name)
+//     }
+// }
+// obj.hello() //Shagun
+
+
+// 2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-23-2-2-2-2-2-1-2
+
+// let obj = {                   //obj is the main  Owner 
+//     name: "Shagun",
+//     myFun : function(){       /// How function written in key value form
+//         console.log(this)
+//     }
+// }
+
+// obj.myFun()                   // {name: 'Shagun', myFun: ƒ}
+
+
+
+// 3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-33-
+
+// This Always refer to the owner object 
+// function myFun(){
+//     console.log(this)
+// }
+// myFun()                   // Window {window: Window, self: Window, document: document, name: '', location: Location, …}
+
+// 4-4-4-4-4-4-4-4-4-4-4-4-4-4-4-4-4-4-4-4-4-4-4-4-4-4-4-4-4-4-4-4-4-4-4-4-4-4-4-4-4-4- 
+
+// CREATING OBJECT USING CONSTRUCTER FUNCTION 
+
+function person(n,m){
+    this.name=n;
+    this.age=m;
+}
+
+let person2 = new person("Prerit", 19)
+console.log(person2)
+
+
+
+
+</script>
