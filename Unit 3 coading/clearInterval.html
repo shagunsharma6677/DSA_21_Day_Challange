@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="timer"></div>
+  </body>
+</html>
+
+<script>
+  // // Basic setInteval syntax
+  // function involk(){
+  //   setInterval(function(){
+  //   console.log("Happy !!!")
+  // },2000)
+
+  // }
+  // involk()
+
+  //777777777777777777777777777777777777777777777777777777777777777777777777777777777777
+
+  // // DISPLAY COUNT-DOWN
+  // let h1 = document.querySelector("#timer");
+
+  // function count() {
+  //   let i = 1;
+  //   setInterval(function () {
+  //     h1.innerText = i;
+  //     i++;
+  //   }, 3000);
+  // }
+
+  // count();
+
+  //&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+  // CLEAR-INTERVAL
+  let h1 = document.querySelector("#timer");
+
+  function count() {
+    let i = 1;
+    let count_Down = setInterval(function () {
+      if (i === 10) {
+        clearInterval(count_Down); //Now we Have the identification of interva ("count_Down") which we have to stop.
+      }
+
+      h1.innerText = i;
+      i++;
+    }, 1000);
+  }
+
+  count();
+</script>
